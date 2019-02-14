@@ -1,0 +1,16 @@
+
+.player-controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &__buttons {
+        margin-bottom: 12px;
+        width: 224px;
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row nowrap;
+    }
+} 

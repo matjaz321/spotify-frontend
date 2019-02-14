@@ -1,0 +1,45 @@
+$progress-bar-bg: #404040;
+
+.progress-bar {
+    height: 1.2rem;
+    position: relative;
+    width: 100%;
+
+    &__bg {
+        background-color: $progress-bar-bg;
+        border-radius: 2px;
+        display: flex;
+        height: 4px;
+        width: 100%;
+    }
+
+    &__slider {
+        width: 12px;
+        height: 12px;
+        background-color: $color-white;
+        border-radius: 50%;
+        z-index: 11;
+        margin-left: -6px;
+        margin-right: -6px;
+    }
+}
+
+.progress-bar-wrapper {
+    overflow: hidden;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+
+    &__fg {
+        background-color: $main-color;
+        border-radius: 2px;
+        height: 4px;
+        width: 100%;
+        // @todo needs to be dynamic remove this
+        transform: translateX(-60%);
+
+        &:hover {
+            background-color: $active-color;
+        }
+    }
+} 

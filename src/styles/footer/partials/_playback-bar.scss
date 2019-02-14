@@ -1,0 +1,15 @@
+.playback-bar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &__progress-time {
+        font-size: 1.1rem;
+        line-height: 1.6rem;
+        letter-spacing: .015em;
+        min-width: 4rem;
+        text-align: center;
+    }
+} 

@@ -1,0 +1,44 @@
+$atists-text-color: #b3b3b3;
+
+.now-playing-bar {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 10;
+
+    &__container {
+        min-width: 60.2rem;
+        background-color: $background-color;
+        border-top: 1px solid $color-black;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+
+    }
+
+    &__inner-content {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 9rem;
+        padding: 0 1.6rem;
+    }
+
+    &__left {
+        width: 30%;
+        min-width: 10.8rem;
+    }
+
+    &__center {
+        width: 40%;
+        min-width: 72.2rem;
+    }
+
+    &__right {
+        width: 30%;
+        min-width: 10.8rem;
+        display: flex;
+        justify-content: flex-end;
+    }
+}

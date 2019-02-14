@@ -1,0 +1,19 @@
+.now-playing {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+
+    &__widget-overlay {
+        position: relative;
+    }
+
+    &__cover-art {
+        flex-shrink: 0;
+        position: relative;
+    }
+
+    &__ctrl-button svg {
+        transform: scale(.7);
+    }
+} 

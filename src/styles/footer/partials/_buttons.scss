@@ -1,0 +1,67 @@
+.control-button {
+    background-color: $rgba-color;
+    border: 0;
+    color: $button-default-text-color;
+    width: 3.2rem;
+    min-width: 3.2rem;
+    height: 3.2rem;
+    position: relative;
+
+    &:hover {
+        color: $color-white;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &__pause-button  {
+        transform: scale(1.2);
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: 50rem;
+        border: 1px solid hsla(0,0%,100%,.6);
+        transition: all 33ms cubic-bezier(.3, 0, .7, 1);
+
+        &:hover {
+            border-color: $color-white;
+            transform: scale(1.3);
+        }
+    }
+
+    &__play-icon {
+        position: absolute;
+        top: -1px;
+        left: 2px;
+    }
+
+    &__pause-icon {
+        transform: scale(.6);
+        position: absolute;
+        top: -1px;
+        left: 0;
+    }
+
+    &--active {
+        color: $active-color;
+
+        &:hover {
+            color: $active-color-hover;
+        }
+    }
+
+    &--active-dot::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        display: block;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: $active-color;
+        transform: translateX(-50%);
+    }
+} 

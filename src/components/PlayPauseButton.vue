@@ -1,0 +1,22 @@
+<template>
+    <button class="control-button control-button__pause-button" @click="togglePlayPause()">
+        <svg v-if="isPlaying" class="control-button__play-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" fill="currentColor"><path d="M22.3,15.2c-0.1-0.2-0.3-0.4-0.5-0.5L10.3,8.1C10,7.9,9.8,7.8,9.5,7.8C8.7,7.8,8,8.5,8,9.3c0,0,0,0,0,0v13.3  c0,0.8,0.7,1.5,1.5,1.5c0.3,0,0.5-0.1,0.8-0.2l11.5-6.7C22.5,16.9,22.7,16,22.3,15.2z"/></svg>
+        <svg v-else class="control-button__pause-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 64 80"><path d="M21,63a3,3,0,0,0,3-3V4a3,3,0,0,0-6,0V60A3,3,0,0,0,21,63Z"/><path d="M43,63a3,3,0,0,0,3-3V4a3,3,0,0,0-6,0V60A3,3,0,0,0,43,63Z"/></svg>
+    </button>
+</template>
+
+<script>
+    export default {
+        name: 'PlayPauseButton',
+        data() {
+            return {
+                isPlaying: true,
+            };
+        },
+        methods: {
+            togglePlayPause() {
+                return this.isPlaying = !this.isPlaying;
+            }
+        }
+    }
+</script>

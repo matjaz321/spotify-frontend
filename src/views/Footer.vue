@@ -1,5 +1,6 @@
 <template>
   <footer class="now-playing-bar" id="footer-playing-bar">
+    <sign-up-footer/>
     <div class="now-playing-bar__container">
       <div class="now-playing-bar__inner-content">
         <div class="now-playing-bar__left">
@@ -30,6 +31,7 @@
   import ProgressBar from './../components/ProgressBar';
   import ExtraControls from './../components/ExtraControls';
   import PlayerControls from './../components/PlayerControls';
+  import SignUpFooter from './../components/SignUpFooter';
 
   export default {
     name: 'Footer',
@@ -38,7 +40,7 @@
       ProgressBar,
       ExtraControls,
       PlayerControls,
+      SignUpFooter,
     }
   }
-
 </script>

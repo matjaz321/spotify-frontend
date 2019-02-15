@@ -1,0 +1,66 @@
+.signup-footer {
+    background-image: linear-gradient(90deg,#af2896,#509bf5);
+    padding: 11px 24px 7px 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    position: relative;
+
+    &__subtitle {
+        font-size: 1.1rem;
+        line-height: 1.6rem;
+        font-weight: 200;
+        text-transform: uppercase;
+        letter-spacing: .16em;
+        color: $color-white;
+        margin: 0 0 .4rem;
+    }
+
+    &__main-text {
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        letter-spacing: .015em;
+        font-weight: 200;
+        color: #b3b3b3;
+        text-transform: none;
+        color: #fff;
+    }
+
+    &__left,
+    &__right {
+        margin-left: 2.4rem;
+    }
+
+    &__right {
+        white-space: nowrap;
+        padding: .8rem 0 1.2rem;
+    }
+
+    &__button {
+        cursor: pointer;
+        color: #4687d6;
+        padding: 8px 48px!important;
+        text-transform: uppercase;
+        letter-spacing: .16em;
+        display: inline-block;
+        text-align: center;
+        touch-action: manipulation;
+        background-image: none;
+        border: 0;
+        border-radius: 50rem;
+        min-width: 13rem;
+        will-change: transform;
+        line-height: 1.6;
+        user-select: none;
+        font-size: 1.4rem;
+
+        &:hover {
+            transition: 33ms cubic-bezier(.3,0,0,1);
+            transition-property: all;
+            transform: scale(1.06);
+        }
+    }
+}

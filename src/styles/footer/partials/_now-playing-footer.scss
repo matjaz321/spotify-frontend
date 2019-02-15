@@ -5,15 +5,14 @@ $atists-text-color: #b3b3b3;
     width: 100%;
     bottom: 0;
     z-index: 10;
+    border-top: 1px solid $color-black;
 
     &__container {
         min-width: 60.2rem;
         background-color: $background-color;
-        border-top: 1px solid $color-black;
         display: flex;
         flex-direction: column;
         height: auto;
-
     }
 
     &__inner-content {

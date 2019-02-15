@@ -11,6 +11,7 @@
 
 <script>
 import Footer from './views/Footer.vue';
+
 export default {
   components: {
     'playing-bar-footer': Footer,

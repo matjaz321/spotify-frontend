@@ -1,0 +1,14 @@
+.sidebar-link-text-icon {
+    display: flex;
+    align-items: center;
+
+    &__icon {
+        display: block;
+    }
+
+    &__text {
+        margin-left: 1.6rem;
+        flex: 1;
+        font-size: 1.6rem;
+    }
+}

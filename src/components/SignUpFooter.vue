@@ -7,7 +7,7 @@
       </p>
     </div>
     <div class="signup-footer__right">
-      <button class="btn signup-footer__button">
+      <button class="signup-footer__button">
         Sign up free
       </button>
     </div>

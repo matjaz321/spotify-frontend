@@ -1,0 +1,29 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    z-index: 4;
+    background-color: rgba(0,0,0,.8);
+    overflow: auto;
+    min-height: 0 !important;
+    will-change: transform;
+    padding-bottom: 9rem;
+
+    &__container {
+        flex: 1;
+        padding-top: 2.4rem;
+        display: flex;
+        flex-direction: column;
+        user-select: none;
+        width: 23rem;
+        cursor: default;
+    }
+
+    &__signup {
+        margin: 3.2rem 0 11rem;
+        padding: 0 2.4rem;
+        width: 100%;
+    }
+}

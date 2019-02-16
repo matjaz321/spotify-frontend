@@ -1,0 +1,26 @@
+.sidebar-link {
+    border: 0;
+    width: 100%;
+    padding: 0 2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 4rem;
+    color: #b3b3b3;
+    cursor: pointer;
+
+    &--active::after {
+        left: 0;
+        content: "";
+        position: absolute;
+        top: 5px;
+        bottom: 5px;
+        width: 4px;
+        background-color: $active-color;
+    }
+
+    &--active,
+    &:hover {
+        color: #fff;
+    }
+}

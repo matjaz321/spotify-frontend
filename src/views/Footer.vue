@@ -1,24 +1,31 @@
 <template>
-  <footer class="now-playing-bar" id="footer-playing-bar">
-    <sign-up-footer/>
+  <footer
+    class="now-playing-bar"
+    id="footer-playing-bar"
+  >
+    <sign-up-footer />
     <div class="now-playing-bar__container">
       <div class="now-playing-bar__inner-content">
         <div class="now-playing-bar__left">
-          <now-playing/>
+          <now-playing />
         </div>
         <div class="now-playing-bar__center">
           <div class="player-controls">
-            <player-controls/>
+            <player-controls />
             <div class="player-controls__playback playback-bar">
-              <div class="playback-bar__progress-time">0:00</div>
-              <progress-bar/>
-              <div class="playback-bar__progress-time">3:22</div>
+              <div class="playback-bar__progress-time">
+                0:00
+              </div>
+              <progress-bar />
+              <div class="playback-bar__progress-time">
+                3:22
+              </div>
             </div>
           </div>
         </div>
         <div class="now-playing-bar__right">
           <div class="now-playing-right-inner">
-            <extra-controls/>
+            <extra-controls />
           </div>
         </div>
       </div>
@@ -27,20 +34,20 @@
 </template>
 
 <script>
-  import NowPlaying from './../components/NowPlaying';
-  import ProgressBar from './../components/ProgressBar';
-  import ExtraControls from './../components/ExtraControls';
-  import PlayerControls from './../components/PlayerControls';
-  import SignUpFooter from './../components/SignUpFooter';
+import NowPlaying from './../components/NowPlaying'
+import ProgressBar from './../components/ProgressBar'
+import ExtraControls from './../components/ExtraControls'
+import PlayerControls from './../components/PlayerControls'
+import SignUpFooter from './../components/SignUpFooter'
 
-  export default {
-    name: 'Footer',
-    components: {
-      NowPlaying,
-      ProgressBar,
-      ExtraControls,
-      PlayerControls,
-      SignUpFooter,
-    }
+export default {
+  name: 'Footer',
+  components: {
+    NowPlaying,
+    ProgressBar,
+    ExtraControls,
+    PlayerControls,
+    SignUpFooter
   }
+}
 </script>

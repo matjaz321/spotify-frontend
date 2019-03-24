@@ -10,13 +10,13 @@
 </template>
 
 <script>
-  export default {
-    name: 'ProgressBar',
-    data() {
-      return {
+export default {
+  name: 'ProgressBar',
+  data () {
+    return {
 
-      };
-    },
+    }
   }
+}
 
 </script>

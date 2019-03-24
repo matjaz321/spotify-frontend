@@ -5,21 +5,21 @@
       <router-link to="/about">About</router-link>
     </div> -->
     <div class="main-content">
-        <router-view/>
-        <main-sidebar/>
+      <router-view />
+      <main-sidebar />
     </div>
-    <playing-bar-footer/>
+    <playing-bar-footer />
   </div>
 </template>
 
 <script>
-import Footer from './views/Footer.vue';
-import Sidebar from './views/Sidebar.vue';
+import Footer from './views/Footer.vue'
+import Sidebar from './views/Sidebar.vue'
 
 export default {
   components: {
     'playing-bar-footer': Footer,
-    'main-sidebar': Sidebar,
+    'main-sidebar': Sidebar
   }
 }
 </script>

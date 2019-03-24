@@ -1,0 +1,9 @@
+.grid-layout {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.grid-item {
+  margin-right: 10px;
+}

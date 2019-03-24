@@ -7,19 +7,22 @@
     <div class="main-content">
       <router-view />
       <main-sidebar />
+      <main-view />
     </div>
     <playing-bar-footer />
   </div>
 </template>
 
 <script>
-import Footer from './views/Footer.vue'
-import Sidebar from './views/Sidebar.vue'
+import Footer from './views/Footer'
+import Sidebar from './views/Sidebar'
+import MainView from './views/MainView'
 
 export default {
   components: {
     'playing-bar-footer': Footer,
-    'main-sidebar': Sidebar
+    'main-sidebar': Sidebar,
+    'main-view': MainView
   }
 }
 </script>

@@ -1,0 +1,23 @@
+.main-boxes {
+  &__header {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+
+    h1 {
+      font-size: 36px;
+      line-height: 44px;
+      letter-spacing: -.005em;
+      font-weight: 600;
+      color: #fff;
+      text-transform: none;
+      margin: 24px 0;
+    }
+  }
+
+  &__content {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

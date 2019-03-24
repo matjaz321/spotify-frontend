@@ -1,0 +1,22 @@
+.box {
+  position: relative;
+  padding-bottom: 6.5em;
+
+  &__info-wrapper {
+    margin: 12px 0 4px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    display: block;
+
+    a {
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: .015em;
+      font-weight: 400;
+      color: #fff;
+      text-transform: none;
+    }
+  }
+}

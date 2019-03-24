@@ -1,10 +1,13 @@
 $art-logo-shadow: rgba(0, 0, 0, .3);
 
-.cover-art {
-    &__image {
-        height: 5.6rem;
-        width: 5.6rem;
-    }
+.cover-art--small {
+    height: 5.6rem;
+    width: 5.6rem;
+}
+
+.cover-art--max {
+    height: 22rem;
+    width: 22rem;
 }
 
 .art-logo {
@@ -31,5 +34,4 @@ $art-logo-shadow: rgba(0, 0, 0, .3);
         background-size: cover;
         background-position: 50%;
     }
-} 
-    
+}

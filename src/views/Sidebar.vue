@@ -72,7 +72,10 @@
     </div>
     <div class="sidebar__signup signup-sidebar">
       <p>
-        <button class="btn btn--white btn--no-margin btn--full-width signup-sidebar--btn">
+        <button 
+            class="btn btn--white btn--no-margin btn--full-width signup-sidebar--btn"
+            @click="login"
+        >
           Sign up
         </button>
       </p>
@@ -108,6 +111,8 @@ import HomeInactive from '../assets/icons/HomeInactive.svg'
 import HomeActive from '../assets/icons/HomeActive.svg'
 import Search from '../assets/icons/Search.svg'
 import Library from '../assets/icons/Library.svg'
+import conifg from '../config'
+
 export default {
   name: 'MainSidebar',
   components: {
@@ -116,6 +121,11 @@ export default {
     HomeActive,
     Search,
     Library
+  },
+  methods: {
+    login() {
+      window.location = config
+    }
   }
 }
 </script>
